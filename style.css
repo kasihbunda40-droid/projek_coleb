@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, pink, lightblue);
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-bottom: 5px;
+}
+
+.card h3 {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+.card ul li {
+    background: #eee;
+    margin: 5px;
+    padding: 5px;
+    border-radius : 5px;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.pink button {
+    background: hotpink;
+}
+
+.blue button {
+    background: dodgerblue;
+}
+
+.pink {
+    border-top: 5px solid hotpink;
+}
+
+.blue {
+    border-top: 5px solid dodgerblue;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
