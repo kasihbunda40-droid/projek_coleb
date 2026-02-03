@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #FADADD;
+    color: #5A2A3C;
+    text-align: center;
+}
+
+/* INTRO / PERKENALAN */
+.intro {
+    background-color: #F4B6C2;
+    padding: 50px 20px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid white;
+    margin-bottom: 20px;
+}
+
+/* SECTION */
+section {
+    padding: 40px 20px;
+}
+
+/* SKILLS */
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #FFE4EC;
+    margin: 8px auto;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    margin: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+    background-color: #F4B6C2;
+    padding: 20px;
+}
