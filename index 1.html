@@ -1,49 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio Dua Orang</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Kami</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1>Portfolio Kami</h1>
-    <p>Web Developer & Designer</p>
-</header>
-
-<section class="container">
-
-    <!-- Portfolio Orang 1 -->
-    <div class="card pink">
-        <img src="img/person1.jpg" alt="Foto Orang 1">
-        <h2>Aulia Putri</h2>
-        <h3>UI/UX Designer</h3>
-        <p>Saya fokus pada desain antarmuka yang menarik, responsif, dan ramah pengguna.</p>
-
-        <ul>
-            <li>Figma</li>
-            <li>Adobe XD</li>
-            <li>HTML & CSS</li>
-        </ul>
-
-        <button onclick="showAlert('Aulia Putri')">HUBUNGI</button>
+        
+    <header>
+    <div class="logo">
+        <h2 style="color: black;">portfolio</h2>
+        <h2 style="color: black;">desain</h2>
+        <h2 style="font-size: 1.2rem;">Portfolio Kami</h2>
     </div>
+    
+    </header>
 
-    <!-- Portfolio Orang 2 -->
-    <div class="card blue">
-        <img src="" alt="Foto Orang 2">
-        <h2>KASIH BUNDA SALSABILA</h2>
-        <h3>X (RPL)</h3>
-        <p>
+     <main class="container">
+        <div class="card pink">
+            <img src="img/person1.jpg" alt="Foto">
+            <h2>agita</h2>
+            <h3>UI/UX Designer</h3>
+            <p>Saya fokus pada desain antarmuka yang menarik, responsif, dan ramah pengguna.</p>
+            <ul>
+                <li>Figma</li>
+                <li>Adobe XD</li>
+                <li>HTML & CSS</li>
+                <li>GIT</li>
+            </ul>
+            <button onclick="showAlert('agita')">Masuk sebagai agita</button>
+        </div>
+
+        <div class="card blue">
+            <img src="img/person2.jpg" alt="Foto">
+            <h2>KASIH</h2>
+            <h3>UI/UK Desainer</h3>
+            <p>Fokus pada pengembangan struktur web dan logika pemrograman.</p>
             <ul>
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JAVA</li>
                 <li>GIT</li>
             </ul>
-            <button onclick="showAlert('kasih')">HUBUNGI</button>
+            <button onclick="showAlert('Kasih')">Masuk sebagai Kasih</button>
+        </div>
+    </main>
 
-            <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

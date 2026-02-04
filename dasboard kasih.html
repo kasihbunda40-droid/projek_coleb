@@ -1,24 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="dasboard kasih.css">
+  <meta charset="UTF-8">
+  <title>About You – The 1975</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    .card {
+      max-width: 420px;
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    .cover {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      margin: 10px 0 5px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 400;
+      opacity: 0.8;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.6;
+      opacity: 0.9;
+      margin-bottom: 20px;
+    }
+
+    .buttons a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.15);
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background: #ffffff;
+      color: #000;
+      transform: scale(1.03);
+    }
+
+    footer {
+      margin-top: 15px;
+      font-size: 12px;
+      opacity: 0.6;
+    }
+  </style>
 </head>
 <body>
-  <div class="card">
-  <img src="cicih (2).jpg" alt="foto saya">
-  <h1 style="color: blanchedalmond;">⋆.𐙚˚࿔kasih comel𝜗𝜚˚⋆</h1>
-  <p class="bio" style="color: antiquewhite;">
-    kalian pasti kanget banget sama kasih yang comel ini tentu saja karna gw kan sangat memangenkann yakann iya in aja lah karnakannnn adalah pokok nya
-  </p>
 
-  <audio controls autoplay loop style="color: aqua;">
-    <source src="The 1975 - About You ｜ Lirik Lagu Terjemahan.mp3" type="audio/mpeg">
-    Browser kamu tidak mendukung audio.
-  </audio>
-</div>
-<script src="script kasih.js"></script>  
+  <div class="card">
+    <!-- Ganti src dengan cover lagu jika punya -->
+    <img src="cover-about-you.jpg" alt="About You - The 1975" class="cover">
+
+    <h1>About You</h1>
+    <h2>The 1975</h2>
+
+    <p>
+      Lagu dengan nuansa melankolis dan emosional yang menggambarkan kenangan,
+      kerinduan, dan perasaan yang sulit diungkapkan. Cocok didengar saat malam
+      atau ketika ingin tenggelam dalam suasana.
+    </p>
+
+    <div class="buttons">
+      <a href="https://open.spotify.com" target="_blank">🎧 Dengarkan di Spotify</a>
+      <a href="https://music.apple.com" target="_blank">🍎 Apple Music</a>
+      <a href="https://www.youtube.com" target="_blank">▶️ YouTube</a>
+    </div>
+
+    <footer>
+      © 2026 Fan Page • The 1975
+    </footer>
+  </div>
+
 </body>
 </html>
