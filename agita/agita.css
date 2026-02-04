@@ -1,14 +1,17 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #FADADD;
-    color: #5A2A3C;
+    /* Ungu sangat muda untuk background utama */
+    background-color: #F3E5F5; 
+    /* Ungu tua untuk teks agar tetap kontras */
+    color: #4A148C; 
     text-align: center;
 }
 
 /* INTRO / PERKENALAN */
 .intro {
-    background-color: #F4B6C2;
+    /* Ungu pastel untuk section intro */
+    background-color: #E1BEE7; 
     padding: 50px 20px;
 }
 
@@ -17,7 +20,8 @@ body {
     height: 160px;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid white;
+    /* Border putih tipis agar foto menonjol */
+    border: 6px solid #FFFFFF; 
     margin-bottom: 20px;
 }
 
@@ -33,11 +37,13 @@ section {
 }
 
 .skills li {
-    background: #FFE4EC;
+    /* Ungu muda transparan untuk list skill */
+    background: #D1C4E9; 
     margin: 8px auto;
     width: 200px;
     padding: 10px;
     border-radius: 20px;
+    font-weight: 500;
 }
 
 /* PORTFOLIO */
@@ -53,7 +59,8 @@ section {
     margin: 15px;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* Shadow ungu tipis */
+    box-shadow: 0 4px 12px rgba(106, 27, 154, 0.1); 
 }
 
 .card img {
@@ -64,6 +71,15 @@ section {
 
 /* FOOTER */
 footer {
-    background-color: #F4B6C2;
+    background-color: #E1BEE7;
     padding: 20px;
+    font-size: 0.9em;
+}
+
+audio {
+  opacity: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
 }
