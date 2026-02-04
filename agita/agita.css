@@ -1,85 +1,89 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    /* Ungu sangat muda untuk background utama */
-    background-color: #F3E5F5; 
-    /* Ungu tua untuk teks agar tetap kontras */
-    color: #4A148C; 
+    background-color: #F3E5F5;
+    color: #4A148C;
     text-align: center;
 }
 
-/* INTRO / PERKENALAN */
 .intro {
-    /* Ungu pastel untuk section intro */
-    background-color: #E1BEE7; 
-    padding: 50px 20px;
+    background-color: #E1BEE7;
+    padding: 60px 20px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 .profile-img {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
+    width: 150px; height: 150px;
     border-radius: 50%;
-    /* Border putih tipis agar foto menonjol */
-    border: 6px solid #FFFFFF; 
-    margin-bottom: 20px;
+    border: 5px solid white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* SECTION */
-section {
-    padding: 40px 20px;
-}
-
-/* SKILLS */
-.skills ul {
-    list-style: none;
-    padding: 0;
-}
-
-.skills li {
-    /* Ungu muda transparan untuk list skill */
-    background: #D1C4E9; 
-    margin: 8px auto;
-    width: 200px;
-    padding: 10px;
+.bio-data {
+    margin-top: 20px;
+    background: white;
+    display: inline-block;
+    padding: 20px;
     border-radius: 20px;
-    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(74, 20, 140, 0.1);
 }
 
-/* PORTFOLIO */
-.portfolio {
+.container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
 }
 
 .card {
-    background-color: white;
-    width: 250px;
-    margin: 15px;
-    border-radius: 15px;
+    background: white;
+    width: 280px;
+    border-radius: 20px;
     overflow: hidden;
-    /* Shadow ungu tipis */
-    box-shadow: 0 4px 12px rgba(106, 27, 154, 0.1); 
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 25px rgba(74, 20, 140, 0.15);
 }
 
-.card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
+.card:hover {
+    transform: translateY(-15px) rotateX(10deg);
+    box-shadow: 0 25px 40px rgba(74, 20, 140, 0.25);
 }
 
-/* FOOTER */
-footer {
-    background-color: #E1BEE7;
-    padding: 20px;
-    font-size: 0.9em;
+.card img { width: 100%; height: 180px; object-fit: cover; }
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(74, 20, 140, 0.7);
+    backdrop-filter: blur(8px);
 }
 
-audio {
-  opacity: 0;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  pointer-events: none;
+.modal-content {
+    background: white;
+    margin: 15% auto;
+    padding: 30px;
+    border-radius: 30px;
+    width: 80%; max-width: 400px;
+    position: relative;
+    animation: zoom 0.3s ease;
+}
+
+@keyframes zoom { from{transform: scale(0.8)} to{transform: scale(1)} }
+
+.modal-body {
+    text-align: left;
+    white-space: pre-line;
+    line-height: 1.8;
+    padding-top: 15px;
+}
+
+.close {
+    position: absolute; right: 20px; top: 15px;
+    font-size: 30px; cursor: pointer;
 }
