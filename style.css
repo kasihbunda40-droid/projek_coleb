@@ -75,21 +75,24 @@ body {
     flex-direction: column;
   
 }
-.header-logo {
-    width: 100%;
-    background-color:linear-gradient(to right, pink, lightblue); 
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    position: sticky; 
-    top: 0; 
-    z-index: 1000; 
+  .logo {
+  width: 110%;
+  background: linear-gradient(to right, pink, lightblue); 
+  padding: 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+ 
 }
 
 .container {
     display: flex;
     justify-content: center;
+    grid-template-columns: repeat( auto-fit,minmax(280px, 1fr));
     gap: 20px;
     padding: 20px;
+    margin: auto;
     flex-wrap: wrap;
 }
 
@@ -102,8 +105,11 @@ body {
     padding: 20px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
 }
-
+.card:hover {
+    transform: scale( 1.02);
+}
 .card img {
     width: 120px;
     height: 120px;
