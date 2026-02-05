@@ -21,14 +21,12 @@
     }
 
     .card {
-      max-width: 420px;
-      background: rgba(255,255,255,0.08);
-      backdrop-filter: blur(10px);
-      border-radius: 16px;
-      padding: 25px;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    width: 150px;        /* sesuaikan ukuran */
+    height: 150px;       /* harus sama agar bulat */
+    object-fit: cover;   /* supaya foto tidak gepeng */
+    border-radius: 50%;  /* ini yang bikin oval/bulat */
     }
+
 
     .cover {
       width: 100%;
