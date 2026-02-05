@@ -151,6 +151,10 @@ button {
     color: white;
     cursor: pointer;
 }
+button:hover {
+      background: #e97eab;
+      transform: scale(1.05);
+}
 
 .pink button {
     background: hotpink;
