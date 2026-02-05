@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Agita</title>
+    <link rel="stylesheet" href="agita.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <section class="intro">
+        <img src="poto.png" alt="Foto Agita" class="profile-img">
+        <h1>Halo, Aku Agita</h1>
+        <div class="bio-data">
+            <p>📅 <strong>Tgl Lahir:</strong> 28 Oktober 2008</p>
+            <p>🏫 <strong>Sekolah:</strong> SMK Riyadhul Ulum Ujung Batu</p>
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <h2>Tentang Saya</h2>
+        <div class="container">
+            <div class="card" onclick="openModal('Pencapaian 🏆', '• Juara 1 Lomba tidur\n• Sertifikat Kemah permaska\n• Pengurus suami cho joon hyung\n• Berhasil Membuat Proyek Git Pertama')">
+                <img src="piala.jpg" alt="Pencapaian">
+                <div class="card-info">
+                    <h3>Pencapaian</h3>
+                    <p>Klik untuk detail prestasi</p>
+                </div>
+            </div>
+
+            <div class="card" onclick="openModal('Kebisaan & Skill 💻', '• Pemrograman Web (HTML & CSS)\n• Desain Grafis (Canva)\n• Public Speaking\n• progam git\n• Kerjasama Tim (Collaboration)')">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400" alt="Kebisaan">
+                <div class="card-info">
+                    <h3>Kebisaan</h3>
+                    <p>Klik untuk detail skill</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <div id="modalDescription" class="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 Agita. 
+    </footer>
+
+    <script src="agita.js"></script>
+</body>
+</html>
